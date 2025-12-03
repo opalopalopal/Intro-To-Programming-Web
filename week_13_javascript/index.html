@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src"script.js"></script>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h1 id="count">Count = 0</h1>
+    <p id="outputA">Initial value of 'a' will be displayed here.</p>
+    <p id="outputB">Initial value of 'b' will be displayed here.</p>
+
+    <script>
+        document.getElementById('outputA').textContent = "HELLO";
+
+        document.getElementById('count').textContent = "1";
+    </script>
+
+
+
+
+<script>
+    document.getElementById('outputA').textContent = "HELLO";
+
+    function updateCount() {
+        let count = 0;
+        return function() {
+            count += 1;
+            document.getElementById('count').textContent = "Count = " + count;
+        }
+    }
+</script>
+
+
+    <script> //script goes at the very end of body
+        console.log('hello from the script tag!'); //this is internal
+
+    </script>
+    <script src="script.js"></script> //this is external
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    font-family: Inter, sans-serif;
+}
+
+h1 {
+    color:#0000ff;
+}
+
+ol {
+    line-height: 2;
+    padding-left: 100px;
+}
